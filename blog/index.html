@@ -32,15 +32,24 @@
   <link rel="shortcut icon" href="https://Jack-7-Chen.github.io/images/favicon.png " type="image/x-icon">
   <link rel="icon" href="https://Jack-7-Chen.github.io/images/favicon.png " type="image/x-icon">
 
+  <!-- google analitycs -->
   
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD8LJ5D2HC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-BD8LJ5D2HC');
-  </script>
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD8LJ5D2HC"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-BD8LJ5D2HC');
+        }
+      </script>
+  
 
 </head>
 <body>
@@ -917,24 +926,6 @@ Hiii</p>
 
         </a>
       </div>
-               
-      <div class="col-lg-3 col-sm-6 mb-5">
-        <h6 class="mb-4">Contact Me</h6>
-        <ul class="list-unstyled">
-          
-          <li class="mb-3"><a class="text-dark" href="tel:0123456"><i
-                class="ti-mobile mr-3 text-primary"></i>0123456</a></li>
-          
-                     
-          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>Taipei, Taiwan</li>
-          
-                     
-          <li class="mb-3"><a class="text-dark" href="mailto:demo@gmail.com"><i
-                class="ti-email mr-3 text-primary"></i>demo@gmail.com</a>
-          
-          </li>
-        </ul>
-      </div>
       
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Social Contacts</h6>
@@ -964,7 +955,7 @@ Hiii</p>
         </ul>
       </div>
       <div class="col-12 border-top py-4 text-center">
-        | copyright © 2026 Jack All Rights Reserved |
+        
       </div>
     </div>
   </div>
